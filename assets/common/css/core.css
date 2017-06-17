@@ -6,6 +6,10 @@ dt, dd, blockquote, address{
     padding: 0;
 }
 
+a:link, a:visited {
+  color: inherit;
+}
+
 html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -18,10 +22,6 @@ html {
   }
 
 /* end css reset */
-
-.cover {
-  padding-top: 50px;
-}
 
 .content {
   width: 90%;
@@ -43,22 +43,23 @@ html {
 
 #navbtn {
   float: right;
+  margin-top: 10px;
+}
+
+.nav {
+  float: right;
+  margin-top: 10px;
 }
 
 .nav li {
   display: none;
   list-style: none;
   padding: 5px;
-  float: right;
-}
+  }
 
-#imgcover {
-  max-width: 100%;
-  height: auto;
-}
-
-.slideimg {
-  width: 100%;
+.nav-itm {
+  text-decoration: none; 
+  text-transform: capitalize;  /* zasto ovo ne radi, proveri */
 }
 
 /* responsive grid */
@@ -114,11 +115,14 @@ html {
     display: none;
   }
 
+  .nav {
+    float: right;
+  }
+
   .nav li {
     display: inline;
     list-style: none;
     padding: 5px;
-    float: right;
   }
 
   .col-1 {width: 8.33%;}
@@ -135,24 +139,7 @@ html {
   .col-12 {width: 100%;}
 }
 
-
-
 /* end responsive grid */
-
-.cover > .row > div {
-  padding-left: 0;
-  padding-right: 0;
-  position: relative;
-  z-index: -1;
-}
-
-.motto {
-    position: absolute;
-    top: 30%;
-    left: 5%;
-    font-size: 25px;
-    color: white;
-}
 
 .footer {
   background-color: #DDDDDD;

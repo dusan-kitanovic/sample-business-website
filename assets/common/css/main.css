@@ -1,0 +1,27 @@
+.cover {
+  padding-top: 50px;
+}
+
+#imgcover {
+  max-width: 100%;
+  height: auto;
+}
+
+.slideimg {
+  width: 100%;
+}
+
+.cover > .row > div {
+  padding-left: 0;
+  padding-right: 0;
+  position: relative;
+  z-index: -1;
+}
+
+.motto {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    font-size: 25px;
+    color: white;
+}
