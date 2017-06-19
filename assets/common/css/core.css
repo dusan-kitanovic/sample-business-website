@@ -23,14 +23,19 @@ html {
 
 /* end css reset */
 
-.content {
-  width: 90%;
-  margin: auto;
+h1, h2, h3, h4 {
+  color: #2F3440;
+}
+
+p {
+  color: #2F3440;
+  font-family: "Trebuchet MS", serif;
 }
 
 .header {
-  background-color: #001f3f;
-  color: #56BFFF;
+  background-color: #0A2E52;
+  color: #FFFFFF;
+  font-family: "Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
   padding: 15px;
   width: 100%;
   position: fixed;
@@ -39,6 +44,7 @@ html {
 .header h1 {
   display: inline;
   float: left;
+  color: #FFFFFF;
 }
 
 #navbtn {
@@ -47,8 +53,9 @@ html {
 }
 
 .nav {
-  float: right;
-  margin-top: 10px;
+    margin-top: 10px;
+    clear: both;
+    text-align: center;
 }
 
 .nav li {
@@ -58,8 +65,13 @@ html {
   }
 
 .nav-itm {
-  text-decoration: none; 
+  text-decoration: none;
   text-transform: capitalize;  /* zasto ovo ne radi, proveri */
+}
+
+.content {
+  width: 90%;
+  margin: auto;
 }
 
 /* responsive grid */
@@ -117,6 +129,7 @@ html {
 
   .nav {
     float: right;
+    clear: none;
   }
 
   .nav li {
