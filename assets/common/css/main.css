@@ -1,8 +1,3 @@
-.header {
-  position: fixed;
-  z-index: 1;
-}
-
 .cover {
   padding-top: 50px;
 }
@@ -20,16 +15,13 @@
   padding-left: 0;
   padding-right: 0;
   position: relative;
-  /*z-index: -1;*/
+  z-index: -1;
 }
 
 .motto {
     position: absolute;
-    top: 18%;
+    top: 30%;
     left: 5%;
-    font-size: 30px;
-    color: #2F3440;
-    text-transform: uppercase;
-    font-family: helvetica, sans-serif;
-    font-weight: bold;
+    font-size: 25px;
+    color: white;
 }
