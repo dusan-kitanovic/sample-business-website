@@ -23,14 +23,19 @@ html {
 
 /* end css reset */
 
-.content {
-  width: 90%;
-  margin: auto;
+h1, h2, h3, h4 {
+  color: #2F3440;
+}
+
+p {
+  color: #2F3440;
+  font-family: "Trebuchet MS", serif;
 }
 
 .header {
-  background-color: #001f3f;
-  color: #56BFFF;
+  background-color: #0A2E52;
+  color: #FFFFFF;
+  font-family: "Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
   padding: 15px;
   width: 100%;
   position: fixed;
@@ -39,16 +44,18 @@ html {
 .header h1 {
   display: inline;
   float: left;
+  color: #FFFFFF;
 }
-
+/*
 #navbtn {
   float: right;
   margin-top: 10px;
 }
-
+*/
 .nav {
-  float: right;
-  margin-top: 10px;
+    margin-top: 10px;
+    clear: both;
+    text-align: center;
 }
 
 .nav li {
@@ -57,9 +64,38 @@ html {
   padding: 5px;
   }
 
+.nav a.icon {
+  float: right;
+  display: block; /* mozda ukloni */
+}
+
+/* makinng menu responsive on/off with js */
+.nav.responsive {
+  position: relative;
+}
+
+.nav.responsive a.icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.nav.responsive li {
+  float: none;
+  display: block;
+  text-align: left;
+}
+
+/* end */
+
 .nav-itm {
-  text-decoration: none; 
+  text-decoration: none;
   text-transform: capitalize;  /* zasto ovo ne radi, proveri */
+}
+
+.content {
+  width: 90%;
+  margin: auto;
 }
 
 /* responsive grid */
@@ -111,12 +147,13 @@ html {
 /* For desktop: */
 @media only screen and (min-width: 768px) {
 
-  #navbtn {
+/*  #navbtn {
     display: none;
   }
-
+*/
   .nav {
     float: right;
+    clear: none;
   }
 
   .nav li {
@@ -124,6 +161,10 @@ html {
     list-style: none;
     padding: 5px;
   }
+
+  .header .nav .icon {
+    display: none;
+}
 
   .col-1 {width: 8.33%;}
   .col-2 {width: 16.66%;}
